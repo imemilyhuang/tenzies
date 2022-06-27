@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  padding: 44px;
+  font-family: Karla, sans-serif;
+  background-color: #001d57;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 620px;
+  padding: 0px 100px;
+  border-radius: 11px;
+  background-color: #cee8ff;
+}
+
+h1 { /* styling the game title */
+  font-size: 33px;
+}
+
+.description { /* styling the game directions */
+  width: 400px;
+  text-align: center;
+  margin: 22px 0px 22px 0px;
+  color: #001540;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 33px;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 8px;
+  width: 90px;
+  border-radius: 10px;
+  background-color: #eff7ff;
+}
+
+.die-number { /* styling appearance of the numbers */
+  font-size: 28px;
+}
+
+.die { /* styling the squares containing the dice */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.dice-container { /* formatting the dice in a 2x5 grid */
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+.roll-button {
+  /* button text styling */
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+
+  /* additional styling for the button */
+  height: 50px;
+  padding: 0px 20px;
+  border: none;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 33px;
+  background-color: #326ee4;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
 }
